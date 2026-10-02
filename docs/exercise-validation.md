@@ -1,4 +1,4 @@
-# Exercise validation
+# Exercise validationn
 
 Run the repository-owned validation before publishing:
 

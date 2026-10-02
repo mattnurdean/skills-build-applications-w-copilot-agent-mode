@@ -1,0 +1,103 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-header {
+  align-items: center;
+  background: #111827;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem max(1.25rem, calc((100vw - 1140px) / 2));
+  gap: 1rem;
+}
+
+.brand {
+  align-items: center;
+  display: inline-flex;
+  font-size: 1.25rem;
+  font-weight: 700;
+  gap: .6rem;
+  text-decoration: none;
+}
+
+.brand img {
+  height: 32px;
+  width: 32px;
+}
+
+.app-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  border-radius: .5rem;
+  color: #cbd5e1;
+  padding: .45rem .7rem;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.dashboard {
+  background: linear-gradient(135deg, #dbeafe, #eff6ff 60%, #fff);
+  border-radius: 1.25rem;
+  padding: clamp(2rem, 8vw, 6rem);
+}
+
+.dashboard h1,
+section > h1 {
+  color: #111827;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.lead {
+  color: #475569;
+  font-size: 1.2rem;
+  max-width: 38rem;
+}
+
+.dashboard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.card {
+  border: 0;
+  border-radius: .9rem;
+  box-shadow: 0 .25rem 1.5rem rgba(15, 23, 42, .07);
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .app-header nav {
+    justify-content: flex-start;
+  }
+}
